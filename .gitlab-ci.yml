@@ -1,0 +1,26 @@
+# Use the official Node.js image to build and serve the React app
+image: node:latest
+
+# Define the stages of the pipeline
+stages:
+  - build
+  - deploy
+
+# Build stage: Install dependencies and build the React app
+build:
+  stage: build
+  script:
+    - npm install        # Install dependencies
+    - npm run build       # Build the React app
+  artifacts:
+    paths:
+      - build             # Save the build output
+
+# Deploy stage: Move the build folder to the public directory for GitLab Pages
+pages:
+  stage: deploy
+  script:
+    - cp -r build/* public/   # Move the build output to the public directory
+  artifacts:
+    paths:
+      - public                # Specify the directory to serve via GitLab Pages
