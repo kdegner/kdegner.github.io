@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+/* The styling for the parent page element */
+.HolyGrail {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+
+    display: grid;          /* Grid allows for setting the template for the page */
+
+    grid-template-rows: 10vh auto 10vh; /* Grid rows: the top and bottom should grow
+                                         or shrink but be auto sized to only be
+                                         as tall as needed.  The middle row should
+                                         be set to the rest of the available space */
+    grid-gap: 0;            /* No gap between items */
+
+    /* Grid template areas define the row and column span for items */
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+}
+
+.HolyGrail-header {
+    grid-area: header;  /* Header item */
+    align-self: start;
+    position: sticky;
+}
+
+.HolyGrail-footer {
+    grid-area: footer; /* Footer item */
+}
+
+.HolyGrail-content {
+    grid-area: content; /* Main content item */
+}

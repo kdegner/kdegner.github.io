@@ -1,0 +1,87 @@
+.projects {
+    height: 100%;
+}
+
+.projects .title {
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    font-family: "Lucida Sans", sans-serif;
+    color: #adadad;
+    font-size: 2.5rem;
+    border-bottom: 3px solid #4a8140;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 35rem));
+    grid-template-rows: auto;
+    width: 90vw;
+    padding-top: 5vh;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    font-family: "Lucida Sans", sans-serif;
+    row-gap: 4vh;
+    column-gap: 2vw;
+}
+
+.project-grid .card {
+    background-color: #424242;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
+
+.project-grid .card-title {
+    color: white;
+}
+
+.project-grid .card-subtitle {
+    color: #adadad;
+}
+
+.project-grid .card-year {
+    color: #4a8140;
+}
+
+.project-grid .card-text {
+    color: #adadad;
+    font-size: medium;
+}
+
+.project-grid .badge {
+    background-color: #4a8140;
+    margin-right: 5px;
+    font-size: small;
+}
+
+.project-grid .link {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+
+.project-grid .footer {
+    padding: 2vh 1vw 2vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carousel {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    position: relative;
+    object-fit: scale-down;
+}
+
+.carousel-item .image {
+    height: 45vh;
+    object-fit: contain;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin-bottom: 0;
+    bottom: -100px;
+}
