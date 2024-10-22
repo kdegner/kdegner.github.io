@@ -1,5 +1,6 @@
 {
   "name": "personal-website",
+  "homepage": "https://kdegner.gitlab.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
