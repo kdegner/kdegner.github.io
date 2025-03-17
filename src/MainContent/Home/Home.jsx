@@ -1,4 +1,5 @@
 import headshot from "./headshot-nobackground.png";
+import NavLink from "../../Header/NavLink";
 
 const Home = () => {
 
@@ -15,7 +16,7 @@ const Home = () => {
                     <img className={"image"} src={headshot} alt={"Photo of Kadie Degner"} />
                 </div>
             </div>
-            <a href={"/projects"} className={"home-projects animate-underline"}><h2>See My Projects<i className="bi bi-arrow-right"></i></h2></a>
+            <NavLink to={"/projects"} className={"home-projects animate-underline"}><h2>See My Projects<i className="bi bi-arrow-right"></i></h2></NavLink>
         </div>
     );
 }
